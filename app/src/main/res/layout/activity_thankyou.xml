@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_0A0C1D"
+    tools:context=".Thankyou">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_splash_top_left" />
+
+    <RelativeLayout
+        android:id="@+id/rlThanku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/LlMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16"
+            android:background="@drawable/bg_curve_popup"
+            android:orientation="vertical"
+            android:paddingVertical="@dimen/dimen_56">
+
+            <TextView
+                android:id="@+id/tvThanku"
+                style="@style/thanku_black_131313_30sp_circularstdbook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_24"
+                android:gravity="center"
+                android:text="@string/thank_you" />
+
+            <TextView
+                android:id="@+id/tvVerificationSuccess"
+                style="@style/thanku_desc_orange_FF9033_17sp_circularstdbook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:gravity="center"
+                android:text="@string/verification_successful" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btnLogin"
+            style="@style/btn_login_white_18sp_circularstdbook"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_44"
+            android:layout_below="@+id/LlMain"
+            android:layout_marginHorizontal="@dimen/dimen_76"
+            android:layout_marginTop="-24dp"
+            android:background="@drawable/bg_btn_thanku"
+            android:gravity="center"
+            android:text="@string/login" />
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/ic_success" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_splash_bottom_right" />
+
+</RelativeLayout>

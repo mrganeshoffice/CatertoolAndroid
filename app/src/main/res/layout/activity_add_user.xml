@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/dimen_20"
+    android:paddingTop="@dimen/dimen_24"
+    tools:context=".AddUser">
+
+    <include
+        android:id="@+id/inToolbar"
+        layout="@layout/item_custom_toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/inToolbar"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_44"
+                    android:layout_marginEnd="@dimen/dimen_6"
+                    android:layout_weight="1"
+                    android:textColorHint="@color/light_888888"
+                    app:boxCornerRadiusBottomEnd="@dimen/dimen_6"
+                    app:boxCornerRadiusBottomStart="@dimen/dimen_6"
+                    app:boxCornerRadiusTopEnd="@dimen/dimen_6"
+                    app:boxCornerRadiusTopStart="@dimen/dimen_6"
+                    app:boxStrokeColor="@color/black_172920">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etFirstName"
+                        style="@style/et_login_black_172920_16sp_circularstdbook"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/first_name"
+                        android:inputType="textCapSentences" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_44"
+                    android:layout_marginStart="@dimen/dimen_6"
+                    android:layout_weight="1"
+                    android:textColorHint="@color/light_888888"
+                    app:boxCornerRadiusBottomEnd="@dimen/dimen_6"
+                    app:boxCornerRadiusBottomStart="@dimen/dimen_6"
+                    app:boxCornerRadiusTopEnd="@dimen/dimen_6"
+                    app:boxCornerRadiusTopStart="@dimen/dimen_6"
+                    app:boxStrokeColor="@color/black_172920">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etLastName"
+                        style="@style/et_login_black_172920_16sp_circularstdbook"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/last_name"
+                        android:inputType="textCapSentences" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_44"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:textColorHint="@color/light_888888"
+                app:boxCornerRadiusBottomEnd="@dimen/dimen_6"
+                app:boxCornerRadiusBottomStart="@dimen/dimen_6"
+                app:boxCornerRadiusTopEnd="@dimen/dimen_6"
+                app:boxCornerRadiusTopStart="@dimen/dimen_6"
+                app:boxStrokeColor="@color/black_172920">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etMobile"
+                    style="@style/et_login_black_172920_16sp_circularstdbook"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/mobile"
+                    android:inputType="phone" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_44"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:textColorHint="@color/light_888888"
+                app:boxCornerRadiusBottomEnd="@dimen/dimen_6"
+                app:boxCornerRadiusBottomStart="@dimen/dimen_6"
+                app:boxCornerRadiusTopEnd="@dimen/dimen_6"
+                app:boxCornerRadiusTopStart="@dimen/dimen_6"
+                app:boxStrokeColor="@color/black_172920">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etEmail"
+                    style="@style/et_login_black_172920_16sp_circularstdbook"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_44"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:textColorHint="@color/light_888888"
+                app:boxCornerRadiusBottomEnd="@dimen/dimen_6"
+                app:boxCornerRadiusBottomStart="@dimen/dimen_6"
+                app:boxCornerRadiusTopEnd="@dimen/dimen_6"
+                app:boxCornerRadiusTopStart="@dimen/dimen_6"
+                app:boxStrokeColor="@color/black_172920">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etConfirmEmail"
+                    style="@style/et_login_black_172920_16sp_circularstdbook"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/confirm_email"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_44"
+                android:layout_marginTop="@dimen/dimen_22"
+                android:textColorHint="@color/light_888888"
+                app:boxCornerRadiusBottomEnd="@dimen/dimen_6"
+                app:boxCornerRadiusBottomStart="@dimen/dimen_6"
+                app:boxCornerRadiusTopEnd="@dimen/dimen_6"
+                app:boxCornerRadiusTopStart="@dimen/dimen_6"
+                app:boxStrokeColor="@color/black_172920">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPassword"
+                    style="@style/et_login_black_172920_16sp_circularstdbook"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/password"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_44"
+                android:layout_marginTop="@dimen/dimen_22"
+                android:textColorHint="@color/light_888888"
+                app:boxCornerRadiusBottomEnd="@dimen/dimen_6"
+                app:boxCornerRadiusBottomStart="@dimen/dimen_6"
+                app:boxCornerRadiusTopEnd="@dimen/dimen_6"
+                app:boxCornerRadiusTopStart="@dimen/dimen_6"
+                app:boxStrokeColor="@color/black_172920">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etConfirmPassword"
+                    style="@style/et_login_black_172920_16sp_circularstdbook"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/confirm_password"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAccessPermission"
+                style="@style/header_black_191919_18sp_circularstdbook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_24"
+                android:text="@string/access_permission" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_6"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_spinner_outline"
+                    android:paddingHorizontal="@dimen/dimen_6">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvCompanyDetails"
+                        style="@style/access_permission_black_12sp_circularstdbook"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableStart="@drawable/ic_company_detail"
+                        android:drawablePadding="@dimen/dimen_8"
+                        android:text="@string/company_details" />
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:id="@+id/rbCompanyDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/tvCompanyDetails" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_6"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_spinner_outline"
+                    android:paddingHorizontal="@dimen/dimen_6">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvHealthSafety"
+                        style="@style/access_permission_light_9B9B9B_12sp_circularstdbook"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableStart="@drawable/ic_health_safety"
+                        android:drawablePadding="@dimen/dimen_8"
+                        android:text="@string/health_safety" />
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:id="@+id/rbHealthSafety"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/tvHealthSafety" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_6"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_spinner_outline"
+                    android:paddingHorizontal="@dimen/dimen_6">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvOpeningClosing"
+                        style="@style/access_permission_black_12sp_circularstdbook"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableStart="@drawable/ic_opening_closing"
+                        android:drawablePadding="@dimen/dimen_8"
+                        android:text="@string/opening_closing" />
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:id="@+id/rbOpeningClosing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/tvOpeningClosing" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_6"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_spinner_outline"
+                    android:paddingHorizontal="@dimen/dimen_6">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvTemperature"
+                        style="@style/access_permission_light_9B9B9B_12sp_circularstdbook"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableStart="@drawable/ic_temperature"
+                        android:drawablePadding="@dimen/dimen_8"
+                        android:text="@string/temperature_records" />
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:id="@+id/rbTemperature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/tvTemperature" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_6"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_spinner_outline"
+                    android:paddingHorizontal="@dimen/dimen_6">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvSalesCost"
+                        style="@style/access_permission_black_12sp_circularstdbook"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableStart="@drawable/ic_sales_cost"
+                        android:drawablePadding="@dimen/dimen_8"
+                        android:text="@string/sales_cost" />
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:id="@+id/rbSalesCost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/tvSalesCost" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_6"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_spinner_outline"
+                    android:paddingHorizontal="@dimen/dimen_6">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvToDoList"
+                        style="@style/access_permission_light_9B9B9B_12sp_circularstdbook"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableStart="@drawable/ic_to_do"
+                        android:drawablePadding="@dimen/dimen_8"
+                        android:text="@string/to_do_list" />
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:id="@+id/rbToDoList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/tvToDoList" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btnAdd"
+        style="@style/btn_login_white_18sp_circularstdbook"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_44"
+        android:layout_alignParentBottom="true"
+        android:layout_marginVertical="@dimen/dimen_20"
+        android:background="@drawable/bg_btn_login"
+        android:gravity="center"
+        android:text="@string/add" />
+
+</RelativeLayout>

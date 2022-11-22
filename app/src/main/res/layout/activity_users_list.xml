@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".UsersList">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_add_user" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAddUser"
+        style="@style/add_user_black_191919_16sp_circularstdbook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:text="@string/click_to_add_user" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvUsersList"
+        style="@style/no_user_light_848484_13sp_circularstdbook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:text="@string/no_user_user" />
+
+</LinearLayout>

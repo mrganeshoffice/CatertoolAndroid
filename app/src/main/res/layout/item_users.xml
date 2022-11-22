@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_8">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_12"
+        app:cardCornerRadius="@dimen/dimen_8"
+        android:elevation="@dimen/dimen_8">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_12">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvUserName"
+                style="@style/user_black_0C0C0C_18sp_circularstdbook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_user" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_delete" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dimen_12"
+                android:layout_toStartOf="@+id/ivDelete"
+                android:src="@drawable/ic_edit" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvEmail"
+                style="@style/limited_light_616161_14sp_circularstdbook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvUserName"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:drawableStart="@drawable/ic_baseline_email"
+                android:drawablePadding="@dimen/dimen_12"
+                android:text="Loremipsum@gmail.com" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCall"
+                style="@style/limited_light_616161_14sp_circularstdbook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvEmail"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:drawableStart="@drawable/ic_baseline_call"
+                android:drawablePadding="@dimen/dimen_12"
+                android:text="+1 789 987 7899" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAccessPermission"
+                style="@style/header_black_191919_18sp_circularstdbook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvCall"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:text="@string/access_permission" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvAccessPermission"
+                android:layout_marginTop="@dimen/dimen_12"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvCompanyDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dimen_4"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_curve_access_permissions"
+                        android:drawablePadding="@dimen/dimen_8"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="@dimen/dimen_10"
+                        android:paddingVertical="@dimen/dimen_8"
+                        android:text="@string/company_detail"
+                        app:drawableStartCompat="@drawable/ic_company_detail" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvSalesCost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dimen_4"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_curve_access_permissions"
+                        android:drawablePadding="@dimen/dimen_8"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="@dimen/dimen_10"
+                        android:paddingVertical="@dimen/dimen_8"
+                        android:text="@string/sales_costt"
+                        app:drawableStartCompat="@drawable/ic_company_detail" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvHealthSafety"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dimen_4"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_curve_access_permissions"
+                        android:drawablePadding="@dimen/dimen_8"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="@dimen/dimen_10"
+                        android:paddingVertical="@dimen/dimen_8"
+                        android:text="@string/health_safety"
+                        app:drawableStartCompat="@drawable/ic_company_detail" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvTemperature"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dimen_4"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_curve_access_permissions"
+                        android:drawablePadding="@dimen/dimen_8"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="@dimen/dimen_10"
+                        android:paddingVertical="@dimen/dimen_8"
+                        android:text="@string/company_detail"
+                        android:visibility="invisible"
+                        app:drawableStartCompat="@drawable/ic_company_detail" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

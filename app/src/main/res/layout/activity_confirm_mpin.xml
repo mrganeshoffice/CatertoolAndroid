@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/dimen_20"
+    android:paddingTop="@dimen/dimen_24"
+    tools:context=".ConfirmMPin">
+
+    <include
+        android:id="@+id/inToolbar"
+        layout="@layout/item_custom_toolbar" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvEnterPin"
+        style="@style/set_pin_black_191919_21sp_circularstdbook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/dimen_24"
+        android:text="@string/confirm_m_pin" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSecureApp"
+        style="@style/pin_desc_light_888888_14sp_circularstdbook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvEnterPin"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/dimen_14"
+        android:text="@string/secure_your_app"
+        android:textAlignment="center" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSecureApp"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etOne"
+            style="@style/set_pin_black_191919_21sp_circularstdbook"
+            android:layout_width="@dimen/dimen_44"
+            android:layout_height="@dimen/dimen_44"
+            android:layout_marginHorizontal="@dimen/dimen_8"
+            android:background="@drawable/bg_enter_pin"
+            android:gravity="center"
+            android:text="@string/one" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etTwo"
+            style="@style/set_pin_black_191919_21sp_circularstdbook"
+            android:layout_width="@dimen/dimen_44"
+            android:layout_height="@dimen/dimen_44"
+            android:layout_marginHorizontal="@dimen/dimen_8"
+            android:layout_toEndOf="@+id/etOne"
+            android:background="@drawable/bg_enter_pin"
+            android:gravity="center"
+            android:text="@string/one" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etThree"
+            style="@style/set_pin_black_191919_21sp_circularstdbook"
+            android:layout_width="@dimen/dimen_44"
+            android:layout_height="@dimen/dimen_44"
+            android:layout_marginHorizontal="@dimen/dimen_8"
+            android:layout_toEndOf="@+id/etTwo"
+            android:background="@drawable/bg_enter_pin"
+            android:gravity="center"
+            android:text="@string/one" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etFour"
+            style="@style/set_pin_black_191919_21sp_circularstdbook"
+            android:layout_width="@dimen/dimen_44"
+            android:layout_height="@dimen/dimen_44"
+            android:layout_marginHorizontal="@dimen/dimen_8"
+            android:layout_toEndOf="@+id/etThree"
+            android:background="@drawable/bg_enter_pin"
+            android:gravity="center"
+            android:text="@string/one" />
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btnContinue"
+        style="@style/btn_login_white_18sp_circularstdbook"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_44"
+        android:layout_alignParentBottom="true"
+        android:layout_marginVertical="@dimen/dimen_20"
+        android:background="@drawable/bg_btn_login"
+        android:gravity="center"
+        android:text="@string/confirm" />
+
+</RelativeLayout>
