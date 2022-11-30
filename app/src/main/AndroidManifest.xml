@@ -16,6 +16,9 @@
         android:theme="@style/Theme.Catertool"
         tools:targetApi="31">
         <activity
+            android:name=".AccessPermissions"
+            android:exported="false" />
+        <activity
             android:name=".DetailUpdated"
             android:exported="false" />
         <activity
