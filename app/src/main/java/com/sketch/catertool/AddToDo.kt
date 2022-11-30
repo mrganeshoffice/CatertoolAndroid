@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.widget.ImageButton
 import android.widget.TextView
 import com.sketch.catertool.databinding.ActivityAddToDoBinding
-import com.sketch.catertool.databinding.ActivityLoginBinding
 
 class AddToDo : AppCompatActivity() {
 

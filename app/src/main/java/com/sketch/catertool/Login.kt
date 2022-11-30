@@ -3,8 +3,6 @@ package com.sketch.catertool
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.sketch.catertool.databinding.ActivityCompanyBinding
-import com.sketch.catertool.databinding.ActivityEditUserBinding
 import com.sketch.catertool.databinding.ActivityLoginBinding
 
 class Login : AppCompatActivity() {

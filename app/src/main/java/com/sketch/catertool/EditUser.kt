@@ -2,8 +2,6 @@ package com.sketch.catertool
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.sketch.catertool.databinding.ActivityCompanyBinding
-import com.sketch.catertool.databinding.ActivityConfirmMpinBinding
 import com.sketch.catertool.databinding.ActivityEditUserBinding
 
 class EditUser : AppCompatActivity() {

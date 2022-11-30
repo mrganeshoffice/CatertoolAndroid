@@ -5,8 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
 import android.widget.TextView
-import com.sketch.catertool.databinding.ActivityCompanyBinding
-import com.sketch.catertool.databinding.ActivityMainBinding
 import com.sketch.catertool.databinding.ActivityUserDetailsBinding
 
 class UserDetails : AppCompatActivity() {
