@@ -91,7 +91,7 @@
         android:layout_height="@dimen/dimen_44"
         android:layout_alignParentBottom="true"
         android:layout_marginVertical="@dimen/dimen_20"
-        android:background="@drawable/bg_btn_login"
+        android:background="@drawable/bg_btn_secondary"
         android:gravity="center"
         android:text="@string/continues" />
 

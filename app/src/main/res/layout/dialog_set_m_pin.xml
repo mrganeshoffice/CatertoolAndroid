@@ -49,7 +49,7 @@
             android:layout_height="@dimen/dimen_44"
             android:layout_marginStart="@dimen/dimen_6"
             android:layout_weight="1"
-            android:background="@drawable/bg_btn_login"
+            android:background="@drawable/bg_btn_secondary"
             android:gravity="center"
             android:text="@string/set_m_pin" />
 

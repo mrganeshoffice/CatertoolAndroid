@@ -5,8 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingHorizontal="@dimen/dimen_20"
-    android:paddingTop="@dimen/dimen_24"
     tools:context=".BusinessDetails">
 
     <include
@@ -16,10 +14,13 @@
     <androidx.core.widget.NestedScrollView
         android:id="@+id/nsvScroll"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_above="@+id/btnVerifyLogin"
         android:layout_below="@+id/inToolbar"
-        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_margin="@dimen/dimen_20"
+        android:layout_marginStart="@dimen/dimen_20"
+        android:layout_marginEnd="@dimen/dimen_20"
+        android:layout_marginBottom="@dimen/dimen_20"
         android:scrollbars="none">
 
         <LinearLayout
@@ -37,7 +38,6 @@
                     android:id="@+id/ssBusinessType"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:inputType="textEmailAddress"
                     android:padding="0dp" />
 
             </LinearLayout>
@@ -56,7 +56,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/etBusinessName"
-                    style="@style/et_login_black_172920_16sp_circularstdbook"
+                    style="@style/et_login_black_16sp_lato_medium"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:hint="@string/business_name"
@@ -78,7 +78,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/etTradingName"
-                    style="@style/et_login_black_172920_16sp_circularstdbook"
+                    style="@style/et_login_black_16sp_lato_medium"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:hint="@string/trading_name"
@@ -97,239 +97,23 @@
                     android:id="@+id/ssTypeOfBusiness"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:inputType="textEmailAddress"
                     android:padding="0dp" />
 
             </LinearLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/dimen_44"
-                android:layout_marginTop="@dimen/dimen_22"
-                android:textColorHint="@color/light_888888"
-                app:boxCornerRadiusBottomEnd="@dimen/dimen_6"
-                app:boxCornerRadiusBottomStart="@dimen/dimen_6"
-                app:boxCornerRadiusTopEnd="@dimen/dimen_6"
-                app:boxCornerRadiusTopStart="@dimen/dimen_6"
-                app:boxStrokeColor="@color/black_172920">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etUploadCompanyLogo"
-                    style="@style/et_login_black_172920_16sp_circularstdbook"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:hint="@string/upload_company_logo"
-                    android:inputType="textPassword"
-                    android:padding="@dimen/dimen_8" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tvAccessPermission"
-                style="@style/header_black_191919_18sp_circularstdbook"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dimen_36"
-                android:text="@string/company_address" />
-
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/dimen_44"
-                android:layout_marginTop="@dimen/dimen_16"
-                android:textColorHint="@color/light_888888"
-                app:boxCornerRadiusBottomEnd="@dimen/dimen_6"
-                app:boxCornerRadiusBottomStart="@dimen/dimen_6"
-                app:boxCornerRadiusTopEnd="@dimen/dimen_6"
-                app:boxCornerRadiusTopStart="@dimen/dimen_6"
-                app:boxStrokeColor="@color/black_172920">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etPostCode"
-                    style="@style/et_login_black_172920_16sp_circularstdbook"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:hint="@string/postcode"
-                    android:inputType="phone"
-                    android:padding="@dimen/dimen_8" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/btnFindByPostcode"
-                style="@style/btn_login_white_18sp_circularstdbook"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/dimen_44"
-                android:layout_marginTop="@dimen/dimen_16"
-                android:background="@drawable/bg_btn_login"
-                android:gravity="center"
-                android:text="@string/find_by_postcode" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/dimen_44"
-                android:layout_marginTop="@dimen/dimen_20"
-                android:background="@drawable/bg_spinner_outline"
-                android:orientation="vertical">
-
-                <androidx.appcompat.widget.AppCompatSpinner
-                    android:id="@+id/ssFindMatchingAddress"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:inputType="textEmailAddress"
-                    android:padding="0dp" />
-
-            </LinearLayout>
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tvPostalAddress"
-                style="@style/header_black_191919_18sp_circularstdbook"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dimen_16"
-                android:text="@string/postal_address" />
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/tvAddress"
-                style="@style/detail_black_20sp_circularstdbook"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dimen_8"
-                android:text="@string/address" />
-
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/btnEnterManually"
-                style="@style/btn_login_white_18sp_circularstdbook"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/dimen_44"
-                android:layout_marginTop="@dimen/dimen_16"
-                android:background="@drawable/bg_btn_address"
-                android:gravity="center"
-                android:text="@string/enter_address_manually" />
-
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/dimen_44"
-                android:layout_marginTop="@dimen/dimen_20"
-                android:textColorHint="@color/light_888888"
-                app:boxCornerRadiusBottomEnd="@dimen/dimen_6"
-                app:boxCornerRadiusBottomStart="@dimen/dimen_6"
-                app:boxCornerRadiusTopEnd="@dimen/dimen_6"
-                app:boxCornerRadiusTopStart="@dimen/dimen_6"
-                app:boxStrokeColor="@color/black_172920">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etAddress1"
-                    style="@style/et_login_black_172920_16sp_circularstdbook"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:hint="@string/address_1"
-                    android:inputType="textCapSentences"
-                    android:padding="@dimen/dimen_8" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/dimen_44"
-                android:layout_marginTop="@dimen/dimen_20"
-                android:textColorHint="@color/light_888888"
-                app:boxCornerRadiusBottomEnd="@dimen/dimen_6"
-                app:boxCornerRadiusBottomStart="@dimen/dimen_6"
-                app:boxCornerRadiusTopEnd="@dimen/dimen_6"
-                app:boxCornerRadiusTopStart="@dimen/dimen_6"
-                app:boxStrokeColor="@color/black_172920">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etAddress2"
-                    style="@style/et_login_black_172920_16sp_circularstdbook"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:hint="@string/address_2"
-                    android:inputType="textCapSentences"
-                    android:padding="@dimen/dimen_8" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/dimen_44"
-                android:layout_marginTop="@dimen/dimen_20"
-                android:textColorHint="@color/light_888888"
-                app:boxCornerRadiusBottomEnd="@dimen/dimen_6"
-                app:boxCornerRadiusBottomStart="@dimen/dimen_6"
-                app:boxCornerRadiusTopEnd="@dimen/dimen_6"
-                app:boxCornerRadiusTopStart="@dimen/dimen_6"
-                app:boxStrokeColor="@color/black_172920">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etTowne"
-                    style="@style/et_login_black_172920_16sp_circularstdbook"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:hint="@string/town"
-                    android:inputType="textCapSentences"
-                    android:padding="@dimen/dimen_8" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/dimen_44"
-                android:layout_marginTop="@dimen/dimen_20"
-                android:textColorHint="@color/light_888888"
-                app:boxCornerRadiusBottomEnd="@dimen/dimen_6"
-                app:boxCornerRadiusBottomStart="@dimen/dimen_6"
-                app:boxCornerRadiusTopEnd="@dimen/dimen_6"
-                app:boxCornerRadiusTopStart="@dimen/dimen_6"
-                app:boxStrokeColor="@color/black_172920">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etCountry"
-                    style="@style/et_login_black_172920_16sp_circularstdbook"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:hint="@string/country"
-                    android:inputType="textCapSentences"
-                    android:padding="@dimen/dimen_8" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/dimen_44"
-                android:layout_marginTop="@dimen/dimen_20"
-                android:textColorHint="@color/light_888888"
-                app:boxCornerRadiusBottomEnd="@dimen/dimen_6"
-                app:boxCornerRadiusBottomStart="@dimen/dimen_6"
-                app:boxCornerRadiusTopEnd="@dimen/dimen_6"
-                app:boxCornerRadiusTopStart="@dimen/dimen_6"
-                app:boxStrokeColor="@color/black_172920">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etPostcode"
-                    style="@style/et_login_black_172920_16sp_circularstdbook"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:hint="@string/postcode"
-                    android:inputType="textCapSentences"
-                    android:padding="@dimen/dimen_8" />
-            </com.google.android.material.textfield.TextInputLayout>
 
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/btnVerifyLogin"
-        style="@style/btn_login_white_18sp_circularstdbook"
+        android:id="@+id/btnNext"
+        style="@style/btn_login_white_18sp_cera_pro_medium"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dimen_44"
+        android:layout_margin="@dimen/dimen_20"
         android:layout_alignParentBottom="true"
-        android:layout_marginVertical="@dimen/dimen_16"
-        android:background="@drawable/bg_btn_login"
+        android:background="@drawable/bg_btn_primary"
         android:gravity="center"
-        android:text="@string/verify_login" />
+        android:text="@string/next" />
 
 </RelativeLayout>

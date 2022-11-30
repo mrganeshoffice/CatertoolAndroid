@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/OfficeWork/Kotlin Projects/Catertool/app/src/main/res/drawable/bg_btn_login.xml" value="0.1555" />
+        <entry key="..\:/OfficeWork/Kotlin Projects/Catertool/app/src/main/res/drawable/bg_btn_new_user.xml" value="0.1555" />
+        <entry key="..\:/OfficeWork/Kotlin Projects/Catertool/app/src/main/res/drawable/bg_btn_primary.xml" value="0.1555" />
+        <entry key="..\:/OfficeWork/Kotlin Projects/Catertool/app/src/main/res/drawable/ic_arrow_back_white.xml" value="0.1555" />
+        <entry key="..\:/OfficeWork/Kotlin Projects/Catertool/app/src/main/res/layout/activity_business_details.xml" value="0.2" />
+        <entry key="..\:/OfficeWork/Kotlin Projects/Catertool/app/src/main/res/layout/activity_login.xml" value="0.2" />
+        <entry key="..\:/OfficeWork/Kotlin Projects/Catertool/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/OfficeWork/Kotlin Projects/Catertool/app/src/main/res/layout/activity_otp_verification.xml" value="0.2" />
+        <entry key="..\:/OfficeWork/Kotlin Projects/Catertool/app/src/main/res/layout/activity_postal_address.xml" value="0.2" />
+        <entry key="..\:/OfficeWork/Kotlin Projects/Catertool/app/src/main/res/layout/activity_user_details.xml" value="0.2" />
+        <entry key="..\:/OfficeWork/Kotlin Projects/Catertool/app/src/main/res/layout/bg_btn_primary.xml" value="0.2" />
+        <entry key="..\:/OfficeWork/Kotlin Projects/Catertool/app/src/main/res/layout/item_custom_toolbar.xml" value="0.2" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

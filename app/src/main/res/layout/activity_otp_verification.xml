@@ -7,28 +7,22 @@
     tools:context=".OTPVerification">
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/ivTopLeft"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_login_top_left" />
-
-    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/ivLogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
-        android:layout_marginTop="116dp"
+        android:layout_marginTop="@dimen/dimen_84"
         android:src="@drawable/ic_login_logo" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tvOtpVerification"
-        style="@style/et_header_orange_F89858_20sp_circularstdbook"
+        style="@style/et_header_orange_F89858_20sp_circularstdblack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/ivLogo"
         android:layout_centerInParent="true"
-        android:layout_marginTop="@dimen/dimen_94"
+        android:layout_marginTop="@dimen/dimen_80"
         android:text="@string/otp_verification" />
 
     <androidx.appcompat.widget.AppCompatTextView
@@ -47,8 +41,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvSecureApp"
-        android:layout_marginHorizontal="@dimen/dimen_36"
-        android:layout_marginTop="@dimen/dimen_36"
+        android:layout_marginHorizontal="@dimen/dimen_66"
+        android:layout_marginTop="@dimen/dimen_38"
         android:gravity="center">
 
         <androidx.appcompat.widget.AppCompatEditText
@@ -127,7 +121,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/rlDigitCode"
-        android:layout_marginTop="@dimen/dimen_56"
+        android:layout_marginTop="@dimen/dimen_40"
         android:gravity="center">
 
         <androidx.appcompat.widget.AppCompatTextView
@@ -154,24 +148,44 @@
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
+                android:layout_height="@dimen/dimen_1"
                 android:background="@color/blue_36A4DD" />
 
         </LinearLayout>
 
     </RelativeLayout>
 
+    <LinearLayout
+        android:id="@+id/LlChangeMobileNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnVerify"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_20"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvChangeMobileNo"
+            style="@style/resend_otp_blue_36A4DD_15sp_circularstdbook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change_mobile_number" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1"
+            android:background="@color/blue_36A4DD" />
+
+    </LinearLayout>
+
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/btnVerify"
-        style="@style/btn_login_white_18sp_circularstdbook"
+        style="@style/btn_login_white_18sp_cera_pro_medium"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dimen_44"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="@dimen/dimen_20"
-        android:layout_marginTop="@dimen/dimen_20"
-        android:layout_marginEnd="@dimen/dimen_20"
-        android:layout_marginBottom="@dimen/dimen_20"
-        android:background="@drawable/bg_btn_login"
+        android:layout_margin="@dimen/dimen_20"
+        android:background="@drawable/bg_btn_primary"
         android:gravity="center"
         android:text="@string/verify" />
 
