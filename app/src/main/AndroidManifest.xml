@@ -22,7 +22,7 @@
             android:name=".PostalAddress"
             android:exported="false" />
         <activity
-            android:name=".Thankyou"
+            android:name=".Welcome"
             android:exported="false" />
         <activity
             android:name=".Dashboard"

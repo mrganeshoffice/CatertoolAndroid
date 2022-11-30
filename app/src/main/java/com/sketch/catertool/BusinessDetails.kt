@@ -21,8 +21,8 @@ class BusinessDetails : AppCompatActivity() {
 
     private fun onClicks() {
 
-        binding.btnVerifyLogin.setOnClickListener {
-            val intent = Intent(this,OTPVerification::class.java)
+        binding.btnNext.setOnClickListener {
+            val intent = Intent(this,PostalAddress::class.java)
             startActivity(intent)
         }
 

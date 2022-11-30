@@ -55,6 +55,9 @@
     <string name="thank_you">Thank you!\nFor Registration</string>
     <string name="verification_successful">Verification Successful</string>
 
+    <string name="Welcome">Welcome</string>
+    <string name="to_a_easier_way_of_catering">to a easier way of catering</string>
+
     <string name="otp_verification">OTP Verification</string>
     <string name="pls_send_digit_otp">Please enter 4 digit code sent to you\nat demo@info.com</string>
     <string name="didnt_receive_otp">Did not Receive OTP?</string>

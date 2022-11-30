@@ -1,54 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/green_8FBD27"
+    tools:context=".Welcome">
 
     <LinearLayout
-        android:id="@+id/LlMain"
+        android:id="@+id/rlThanku"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/dimen_16"
-        android:layout_marginTop="@dimen/dimen_20"
-        android:background="@drawable/bg_curve_popup"
+        android:layout_centerInParent="true"
         android:orientation="vertical"
-        android:paddingBottom="@dimen/dimen_56">
+        android:paddingHorizontal="@dimen/dimen_20">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="-40dp"
-            android:background="@drawable/ic_success" />
+            android:background="@drawable/ic_tick" />
 
         <TextView
-            android:id="@+id/tvThanku"
-            style="@style/thanku_black_131313_30sp_circularstdbook"
+            android:id="@+id/tvWelcome"
+            style="@style/welcome_white_50sp_cera_pro_bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dimen_24"
+            android:layout_marginTop="-30dp"
             android:gravity="center"
-            android:text="@string/thank_you" />
+            android:text="@string/Welcome" />
 
         <TextView
-            android:id="@+id/tvVerificationSuccess"
-            style="@style/thanku_desc_orange_FF9033_17sp_circularstdbook"
+            style="@style/welcome_white_24sp_cera_pro_bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dimen_16"
             android:gravity="center"
-            android:text="@string/verification_successful" />
+            android:text="@string/to_a_easier_way_of_catering" />
 
     </LinearLayout>
 
     <TextView
         android:id="@+id/btnLogin"
-        style="@style/btn_login_white_18sp_circularstdbook"
+        style="@style/btn_login_131313_black_18sp_cera_pro_medium"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dimen_44"
-        android:layout_below="@+id/LlMain"
-        android:layout_marginHorizontal="@dimen/dimen_76"
-        android:layout_marginTop="-24dp"
-        android:layout_marginBottom="@dimen/dimen_20"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
         android:background="@drawable/bg_btn_welcome"
         android:gravity="center"
         android:text="@string/login" />

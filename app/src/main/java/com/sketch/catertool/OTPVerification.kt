@@ -3,8 +3,6 @@ package com.sketch.catertool
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.sketch.catertool.databinding.ActivityCompanyBinding
-import com.sketch.catertool.databinding.ActivityMainBinding
 import com.sketch.catertool.databinding.ActivityOtpVerificationBinding
 
 class OTPVerification : AppCompatActivity() {
@@ -23,7 +21,7 @@ class OTPVerification : AppCompatActivity() {
     private fun onClicks() {
 
         binding.btnVerify.setOnClickListener {
-            val intent = Intent(this,Thankyou::class.java)
+            val intent = Intent(this,Welcome::class.java)
             startActivity(intent)
         }
 
