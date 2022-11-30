@@ -14,13 +14,11 @@
     <androidx.core.widget.NestedScrollView
         android:id="@+id/nsvScroll"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/btnVerifyLogin"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnNext"
         android:layout_below="@+id/inToolbar"
-        android:layout_margin="@dimen/dimen_20"
-        android:layout_marginStart="@dimen/dimen_20"
-        android:layout_marginEnd="@dimen/dimen_20"
-        android:layout_marginBottom="@dimen/dimen_20"
+        android:layout_marginHorizontal="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/dimen_20"
         android:scrollbars="none">
 
         <LinearLayout
@@ -110,8 +108,8 @@
         style="@style/btn_login_white_18sp_cera_pro_medium"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dimen_44"
-        android:layout_margin="@dimen/dimen_20"
         android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dimen_20"
         android:background="@drawable/bg_btn_primary"
         android:gravity="center"
         android:text="@string/next" />

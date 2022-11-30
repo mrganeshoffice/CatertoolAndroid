@@ -15,18 +15,58 @@
         android:id="@+id/nsvScroll"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/btnVerifyLogin"
+        android:layout_above="@+id/btnSubmit"
         android:layout_below="@+id/inToolbar"
-        android:layout_marginStart="@dimen/dimen_20"
+        android:layout_marginHorizontal="@dimen/dimen_20"
         android:layout_marginTop="@dimen/dimen_20"
-        android:layout_marginEnd="@dimen/dimen_20"
-        android:layout_marginBottom="@dimen/dimen_20"
         android:scrollbars="none">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_44"
+                    android:layout_marginEnd="@dimen/dimen_8"
+                    android:layout_toStartOf="@+id/btnFindByPostcode"
+                    android:textColorHint="@color/light_888888"
+                    app:boxCornerRadiusBottomEnd="@dimen/dimen_6"
+                    app:boxCornerRadiusBottomStart="@dimen/dimen_6"
+                    app:boxCornerRadiusTopEnd="@dimen/dimen_6"
+                    app:boxCornerRadiusTopStart="@dimen/dimen_6"
+                    app:boxStrokeColor="@color/black_172920">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etEnterPostcode"
+                        style="@style/et_login_black_172920_16sp_circularstdbook"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/postcode"
+                        android:inputType="textCapSentences"
+                        android:padding="@dimen/dimen_8" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/btnFindByPostcode"
+                    style="@style/btn_login_white_18sp_circularstdbook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_44"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/dimen_8"
+                    android:background="@drawable/bg_btn_address"
+                    android:gravity="center"
+                    android:paddingHorizontal="@dimen/dimen_20"
+                    android:text="@string/find_by_postcode" />
+
+            </RelativeLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -165,7 +205,7 @@
     </androidx.core.widget.NestedScrollView>
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/btnVerifyLogin"
+        android:id="@+id/btnSubmit"
         style="@style/btn_login_white_18sp_circularstdbook"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dimen_44"
@@ -173,6 +213,6 @@
         android:layout_margin="@dimen/dimen_20"
         android:background="@drawable/bg_btn_primary"
         android:gravity="center"
-        android:text="@string/verify_login" />
+        android:text="@string/submit" />
 
 </RelativeLayout>
