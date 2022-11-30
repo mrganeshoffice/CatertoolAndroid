@@ -46,7 +46,7 @@
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etEnterPostcode"
-                        style="@style/et_login_black_172920_16sp_circularstdbook"
+                        style="@style/et_login_black_16sp_lato_medium"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:hint="@string/postcode"
@@ -82,7 +82,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/etAddress1"
-                    style="@style/et_login_black_172920_16sp_circularstdbook"
+                    style="@style/et_login_black_16sp_lato_medium"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:hint="@string/address_1"
@@ -104,7 +104,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/etAddress2"
-                    style="@style/et_login_black_172920_16sp_circularstdbook"
+                    style="@style/et_login_black_16sp_lato_medium"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:hint="@string/address_2"
@@ -126,7 +126,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/etTowne"
-                    style="@style/et_login_black_172920_16sp_circularstdbook"
+                    style="@style/et_login_black_16sp_lato_medium"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:hint="@string/town"
@@ -148,7 +148,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/etCountry"
-                    style="@style/et_login_black_172920_16sp_circularstdbook"
+                    style="@style/et_login_black_16sp_lato_medium"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:hint="@string/country"
@@ -170,7 +170,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/etPostcode"
-                    style="@style/et_login_black_172920_16sp_circularstdbook"
+                    style="@style/et_login_black_16sp_lato_medium"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:hint="@string/postcode"
@@ -192,7 +192,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/etState"
-                    style="@style/et_login_black_172920_16sp_circularstdbook"
+                    style="@style/et_login_black_16sp_lato_medium"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:hint="@string/state"
@@ -206,7 +206,7 @@
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/btnSubmit"
-        style="@style/btn_login_white_18sp_circularstdbook"
+        style="@style/btn_login_white_18sp_cera_pro_medium"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dimen_44"
         android:layout_alignParentBottom="true"
