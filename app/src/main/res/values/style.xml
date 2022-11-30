@@ -74,6 +74,18 @@
         <item name="fontFamily">@font/cera_pro_bold</item>
     </style>
 
+    <style name="detail_white_34sp_cera_pro_bold">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">34sp</item>
+        <item name="fontFamily">@font/cera_pro_bold</item>
+    </style>
+
+    <style name="detail_white_15sp_cera_pro_light">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">15sp</item>
+        <item name="fontFamily">@font/cera_pro_light</item>
+    </style>
+
     /////////////////////////////////////////////////////////////
 
 
