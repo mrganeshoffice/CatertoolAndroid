@@ -95,4 +95,9 @@
     <string name="new_email_address">New Email Address</string>
     <string name="confirm_email_address">Confirm Email Address</string>
 
+    <string name="title">Title</string>
+    <string name="notes">Notes</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+
 </resources>

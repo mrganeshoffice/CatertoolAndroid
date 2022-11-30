@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ToDo">
+
+    <include
+        android:id="@+id/inToolbar"
+        layout="@layout/item_custom_toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/inToolbar"
+        android:layout_above="@+id/btnAdd"
+        android:layout_marginHorizontal="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_44"
+                android:textColorHint="@color/light_888888"
+                app:boxCornerRadiusBottomEnd="@dimen/dimen_6"
+                app:boxCornerRadiusBottomStart="@dimen/dimen_6"
+                app:boxCornerRadiusTopEnd="@dimen/dimen_6"
+                app:boxCornerRadiusTopStart="@dimen/dimen_6"
+                app:boxStrokeColor="@color/black_172920">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etTitle"
+                    style="@style/et_login_black_16sp_lato_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/title"
+                    android:inputType="textCapSentences" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_162"
+                android:minLines="@dimen/dimen_162"
+                android:maxHeight="@dimen/dimen_162"
+                android:layout_marginTop="@dimen/dimen_22"
+                android:textColorHint="@color/light_888888"
+                app:boxCornerRadiusBottomEnd="@dimen/dimen_6"
+                app:boxCornerRadiusBottomStart="@dimen/dimen_6"
+                app:boxCornerRadiusTopEnd="@dimen/dimen_6"
+                app:boxCornerRadiusTopStart="@dimen/dimen_6"
+                app:boxStrokeColor="@color/black_172920">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etNotes"
+                    style="@style/et_login_black_16sp_lato_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/notes"
+                    android:gravity="start"
+                    android:inputType="textCapSentences||textMultiLine" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_44"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:background="@drawable/bg_spinner_outline"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/scDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/date"
+                    android:paddingHorizontal="@dimen/dimen_20" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_44"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:background="@drawable/bg_spinner_outline"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/scTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/time"
+                    android:paddingHorizontal="@dimen/dimen_20" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btnAdd"
+        style="@style/btn_login_white_18sp_cera_pro_medium"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_44"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dimen_20"
+        android:background="@drawable/bg_btn_primary"
+        android:gravity="center"
+        android:text="@string/add" />
+
+</RelativeLayout>
