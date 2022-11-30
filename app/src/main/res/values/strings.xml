@@ -87,4 +87,9 @@
     <string name="verify_login">Verify &amp; login</string>
     <string name="submit">Submit</string>
 
+    <string name="submit_changes">Submit Changes</string>
+    <string name="current_email_address">Current Email Address</string>
+    <string name="new_email_address">New Email Address</string>
+    <string name="confirm_email_address">Confirm Email Address</string>
+
 </resources>
