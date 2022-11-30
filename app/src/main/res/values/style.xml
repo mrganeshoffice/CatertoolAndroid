@@ -50,6 +50,12 @@
         <item name="fontFamily">@font/circularstdbook</item>
     </style>
 
+    <style name="btn_postcode_white_13sp_cera_pro_medium">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">13sp</item>
+        <item name="fontFamily">@font/cera_pro_medium</item>
+    </style>
+
     /////////////////////////////////////////////////////////////
 
 

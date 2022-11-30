@@ -56,7 +56,7 @@
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/btnFindByPostcode"
-                    style="@style/btn_login_white_18sp_circularstdbook"
+                    style="@style/btn_postcode_white_13sp_cera_pro_medium"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/dimen_44"
                     android:layout_alignParentEnd="true"
