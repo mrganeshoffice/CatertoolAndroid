@@ -1,76 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="@dimen/dimen_26"
     tools:context=".Company">
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/company_logo"
-        android:layout_gravity="center" />
+    <include
+        android:id="@+id/inToolbar"
+        layout="@layout/item_custom_toolbar" />
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tvCompanyName"
-        style="@style/company_black_0C0C0C_22sp_circularstdbook"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dimen_6"
-        android:layout_gravity="center"
-        android:text="@string/company_name" />
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tvLimitedCompany"
-        style="@style/limited_light_616161_14sp_circularstdbook"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/limited_company" />
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tvEdit"
-        style="@style/edit_blue_36A4DD_18sp_circularstdbook"
-        android:layout_marginTop="@dimen/dimen_6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/edit" />
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tvEmail"
-        style="@style/access_permission_black_12sp_circularstdbook"
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nsvScroll"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dimen_36"
-        android:gravity="center_vertical"
-        android:drawableStart="@drawable/ic_email"
-        android:drawablePadding="@dimen/dimen_18"
-        android:text="tastybites@gmail.com" />
+        android:layout_above="@+id/btnSave"
+        android:layout_below="@+id/inToolbar"
+        android:layout_marginHorizontal="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/company_logo" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCompanyName"
+                style="@style/company_black_0C0C0C_22sp_circularstdbook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_6"
+                android:text="@string/company_name" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvLimitedCompany"
+                style="@style/limited_light_616161_14sp_circularstdbook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/limited_company" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvEdit"
+                style="@style/edit_blue_36A4DD_18sp_circularstdbook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_6"
+                android:text="@string/edit" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvEmail"
+                style="@style/access_permission_black_12sp_circularstdbook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_36"
+                android:drawableStart="@drawable/ic_email"
+                android:drawablePadding="@dimen/dimen_18"
+                android:gravity="center_vertical"
+                android:text="tastybites@gmail.com" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCall"
+                style="@style/access_permission_black_12sp_circularstdbook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_18"
+                android:drawableStart="@drawable/ic_call"
+                android:drawablePadding="@dimen/dimen_18"
+                android:gravity="center_vertical"
+                android:text="+1 789 987 7899" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvLocation"
+                style="@style/access_permission_black_12sp_circularstdbook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_18"
+                android:drawableStart="@drawable/ic_location"
+                android:drawablePadding="@dimen/dimen_18"
+                android:gravity="center_vertical"
+                android:text="@string/address" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tvCall"
-        style="@style/access_permission_black_12sp_circularstdbook"
+        android:id="@+id/btnSave"
+        style="@style/btn_login_white_18sp_cera_pro_medium"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dimen_18"
-        android:gravity="center_vertical"
-        android:drawableStart="@drawable/ic_call"
-        android:drawablePadding="@dimen/dimen_18"
-        android:text="+1 789 987 7899" />
+        android:layout_height="@dimen/dimen_44"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginEnd="@dimen/dimen_20"
+        android:layout_marginBottom="@dimen/dimen_20"
+        android:background="@drawable/bg_btn_primary"
+        android:gravity="center"
+        android:text="@string/save" />
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tvLocation"
-        style="@style/access_permission_black_12sp_circularstdbook"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dimen_18"
-        android:gravity="center_vertical"
-        android:drawableStart="@drawable/ic_location"
-        android:drawablePadding="@dimen/dimen_18"
-        android:text="@string/address" />
-
-</LinearLayout>
+</RelativeLayout>
