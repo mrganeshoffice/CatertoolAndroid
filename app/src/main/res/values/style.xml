@@ -86,6 +86,24 @@
         <item name="fontFamily">@font/cera_pro_light</item>
     </style>
 
+    <style name="header_black_191919_18sp_circularstdbold">
+        <item name="android:textColor">@color/black_191919</item>
+        <item name="android:textSize">18sp</item>
+        <item name="fontFamily">@font/circularstdbold</item>
+    </style>
+
+    <style name="access_permission_black_12sp_cera_pro_medium">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">12sp</item>
+        <item name="fontFamily">@font/cera_pro_medium</item>
+    </style>
+
+    <style name="access_permission_light_9B9B9B_12sp_cera_pro_medium">
+        <item name="android:textColor">@color/light_9B9B9B</item>
+        <item name="android:textSize">12sp</item>
+        <item name="fontFamily">@font/cera_pro_medium</item>
+    </style>
+
     /////////////////////////////////////////////////////////////
 
 
