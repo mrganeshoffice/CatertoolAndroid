@@ -48,7 +48,7 @@
                 android:layout_marginTop="@dimen/dimen_16"
                 android:drawableStart="@drawable/ic_baseline_email"
                 android:drawablePadding="@dimen/dimen_12"
-                android:text="Loremipsum@gmail.com" />
+                android:text="@string/loremipsum_gmail_com" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvCall"
@@ -59,7 +59,7 @@
                 android:layout_marginTop="@dimen/dimen_12"
                 android:drawableStart="@drawable/ic_baseline_call"
                 android:drawablePadding="@dimen/dimen_12"
-                android:text="+1 789 987 7899" />
+                android:text="@string/_1_789_987_7899" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvAccessPermission"

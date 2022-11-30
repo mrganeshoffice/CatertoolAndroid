@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingHorizontal="@dimen/dimen_20"
-    android:paddingTop="@dimen/dimen_24"
     tools:context=".SetMPin">
 
     <include
@@ -28,6 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvEnterPin"
+        android:paddingHorizontal="@dimen/dimen_20"
         android:layout_centerInParent="true"
         android:layout_marginTop="@dimen/dimen_14"
         android:text="@string/secure_your_app"
@@ -90,8 +88,9 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/dimen_44"
         android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="@dimen/dimen_20"
         android:layout_marginVertical="@dimen/dimen_20"
-        android:background="@drawable/bg_btn_secondary"
+        android:background="@drawable/bg_btn_primary"
         android:gravity="center"
         android:text="@string/continues" />
 

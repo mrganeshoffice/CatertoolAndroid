@@ -5,8 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingHorizontal="@dimen/dimen_20"
-    android:paddingTop="@dimen/dimen_24"
     tools:context=".EditUser">
 
     <include
@@ -16,8 +14,10 @@
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_above="@+id/btnSave"
         android:layout_below="@+id/inToolbar"
         android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginHorizontal="@dimen/dimen_20"
         android:scrollbars="none">
 
         <LinearLayout
@@ -131,7 +131,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dimen_16"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:baselineAligned="false">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -191,7 +192,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dimen_16"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:baselineAligned="false">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -251,7 +253,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dimen_16"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:baselineAligned="false">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -329,7 +332,7 @@
         android:layout_height="@dimen/dimen_44"
         android:layout_alignParentBottom="true"
         android:layout_marginVertical="@dimen/dimen_20"
-        android:background="@drawable/bg_btn_secondary"
+        android:background="@drawable/bg_btn_primary"
         android:gravity="center"
         android:text="@string/save" />
 
