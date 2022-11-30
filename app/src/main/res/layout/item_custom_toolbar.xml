@@ -21,7 +21,7 @@
         android:layout_centerVertical="true"
         android:layout_marginStart="@dimen/dimen_14"
         android:layout_toEndOf="@id/ivBackImg"
-        android:text="@string/user_details" />
+        android:text="" />
 
     <LinearLayout
         android:id="@+id/LlScreens"
