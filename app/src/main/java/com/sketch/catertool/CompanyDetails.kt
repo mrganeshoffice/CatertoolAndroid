@@ -21,13 +21,13 @@ class CompanyDetails : AppCompatActivity() {
 
     private fun onClicks() {
 
-        val tvHeader = findViewById<TextView>(R.id.tvHeader)
+        /*val tvHeader = findViewById<TextView>(R.id.tvHeader)
         tvHeader.text = R.string.company_details.toString()
 
         val ivBackImg = findViewById<ImageButton>(R.id.ivBackImg)
         ivBackImg.setOnClickListener{
             finish()
-        }
+        }*/
 
     }
 
